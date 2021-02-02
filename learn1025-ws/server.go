@@ -6,6 +6,8 @@ import (
 	"net/http"
 	"sync"
 	"time"
+
+	"github.com/gorilla/websocket"
 )
 
 ///////////////////////////////////////////////////////
@@ -159,6 +161,7 @@ func (wsConn *wsConnection) wsClose() {
 }
 
 func main() {
+	// http://localhost:7777/ws
 	http.HandleFunc("/ws", wsHandler)
 	http.ListenAndServe("0.0.0.0:7777", nil)
 }
