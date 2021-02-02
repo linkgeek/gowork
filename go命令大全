@@ -1,0 +1,13 @@
+
+#Linux安装
+1. wget https://golang.google.cn/dl/go1.15.7.linux-amd64.tar.gz
+2. tar -zxvf go1.15.7.linux-amd64.tar.gz -C /usr/local
+
+export PATH="/usr/local/go/bin:$PATH"
+
+vim /etc/profile
+export GOROOT=/usr/local/go
+export GOPATH=~/golib:~/goproject
+export GOBIN=~/gobin
+export PATH=$PATH:$GOROOT/bin:$GOBIN
+$ source /etc/profile
