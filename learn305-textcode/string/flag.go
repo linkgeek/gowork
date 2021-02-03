@@ -28,7 +28,7 @@ func style2() {
 	fmt.Println(method, value)
 }
 
-func main() {
+func main2() {
 	//style()
 	style2()
 }

@@ -10,7 +10,7 @@ type person struct {
 	Age  int
 }
 
-func main() {
+func main5() {
 	//给结构体赋值
 	p := person{Name: "霜花似雪", Age: 18}
 

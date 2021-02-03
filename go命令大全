@@ -3,6 +3,10 @@
 1. wget https://golang.google.cn/dl/go1.15.7.linux-amd64.tar.gz
 2. tar -zxvf go1.15.7.linux-amd64.tar.gz -C /usr/local
 
+go version
+go env
+
+# 配置环境变量
 export PATH="/usr/local/go/bin:$PATH"
 
 vim /etc/profile
@@ -11,3 +15,12 @@ export GOPATH=~/golib:~/goproject
 export GOBIN=~/gobin
 export PATH=$PATH:$GOROOT/bin:$GOBIN
 $ source /etc/profile
+
+# 设置变量
+Go version >= 1.13
+go env -w GOPROXY=https://goproxy.io,direct
+go env -w GO111MODULE=on
+
+# GO111MODULE
+没有 GO111MODULE时，go编译程序的查找依赖的顺序 go path > goroot, 
+有了GO111MODULE后，会读取当前项目的go.mod.文件，在go.mod文件中会记录有哪些依赖

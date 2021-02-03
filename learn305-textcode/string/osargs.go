@@ -5,6 +5,6 @@ import (
 	"os"
 )
 
-func main() {
+func main3() {
 	fmt.Println(os.Args)
 }

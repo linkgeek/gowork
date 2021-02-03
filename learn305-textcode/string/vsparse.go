@@ -18,7 +18,7 @@ func getAttributeValue(attr []xml.Attr, name string) string {
 	return ""
 }
 
-func main() {
+func main4() {
 	//读取文件
 	content, err := ioutil.ReadFile("vsproj.csproj")
 	//解析

@@ -57,7 +57,7 @@ func copyFile(src, dst string) (w int64, err error) {
 	return io.Copy(dstFile, srcFile)
 }
 
-func main() {
+func main1() {
 	var showProgress, force bool
 
 	// 定义命令行参数
