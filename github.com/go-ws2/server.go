@@ -4,7 +4,7 @@ import (
 	"net/http"
 	"time"
 
-	"github.com/go-websocket/impl"
+	"github.com/go-ws2/impl"
 
 	"github.com/gorilla/websocket"
 )
