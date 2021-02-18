@@ -3,14 +3,14 @@ package main
 import (
 	"fmt"
 	"runtime"
-	"time"
+	"chapter/http"
 )
 
 func init() {
 	fmt.Print("在main函数执行之前\n")
 }
 
-func main0() {
+func main() {
 	//learn1.Learn1()
 	//show2.Show2()
 	fmt.Println("this is main")
@@ -30,5 +30,7 @@ func main0() {
 	// goroutine.WG.Wait()
 	// fmt.Println("All Done!")
 
-	time.Sleep(time.Second * 30)
+	test.TestHttp()
+
+	//time.Sleep(time.Second * 30)
 }

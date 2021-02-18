@@ -24,3 +24,6 @@ go env -w GO111MODULE=on
 # GO111MODULE
 没有 GO111MODULE时，go编译程序的查找依赖的顺序 go path > goroot, 
 有了GO111MODULE后，会读取当前项目的go.mod.文件，在go.mod文件中会记录有哪些依赖
+
+#交叉编译命令
+env GOOS=linux GOARCH=amd64 go build
