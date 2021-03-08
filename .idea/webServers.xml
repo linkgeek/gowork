@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="WebServers">
+    <option name="servers">
+      <webServer id="b7177e6c-9921-4805-aec5-a1915310b333" name="gosrc26" url="http://192.168.7.26">
+        <fileTransfer accessType="SFTP" host="192.168.7.26" port="22" sshConfigId="55265e52-6836-414b-8b6a-db5caa927b52" sshConfig="root@192.168.7.26:22 password">
+          <advancedOptions>
+            <advancedOptions dataProtectionLevel="Private" passiveMode="true" shareSSLContext="true" />
+          </advancedOptions>
+        </fileTransfer>
+      </webServer>
+    </option>
+  </component>
+</project>

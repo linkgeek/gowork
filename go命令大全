@@ -1,4 +1,8 @@
 
+_ 的作用是:当导入一个包的时候，该包的init和其他函数都会被导入。
+
+
+
 #Linux安装
 1. wget https://golang.google.cn/dl/go1.15.7.linux-amd64.tar.gz
 2. tar -zxvf go1.15.7.linux-amd64.tar.gz -C /usr/local
@@ -27,3 +31,52 @@ go env -w GO111MODULE=on
 
 #交叉编译命令
 env GOOS=linux GOARCH=amd64 go build
+
+《beego》
+
+bee generate scaffold user -fields="id:int64,name:string,password:string,add_time:int,status:int,mobile:string,avatar:string" -driver=mysql -conn="root:sdf*2018@tcp(192.168.7.26:3306)/fyouku
+
+
+
+
+
+《etcd》
+github：https://github.com/etcd-io/etcd
+
+etcd --version
+
+nohup ./etcd --listen-client-urls 'http://0.0.0.0:2379' --advertise-client-urls 'http://0.0.0.0:2379' &
+
+./etcdctl put "name" "giant"
+./etcdctl get "name"
+./etcdctl del "name"
+
+《Consul》
+
+启动：默认是8500端口
+      -server 表示是server模式
+　   -bootstrap-expect=3 表示是集群中有3台服务器 bootstrap该模式node可以指定自己作为leader ，如果是非leader可不加该参数
+　　-data-dir=/tmp/consul 目录
+　　-node=n2 该服务器节点名
+　　-bind=127.0.0.1 节点绑定的ip
+　　-ui 非必须 webui的路径 用web来管理consul
+————————————————
+
+./consul agent -server -bootstrap-expect 1 -data-dir=/tmp/consul -node=n1 -bind=127.0.0.1 -client=0.0.0.0 -ui
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

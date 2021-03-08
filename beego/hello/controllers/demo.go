@@ -19,7 +19,7 @@ func (this *DemoController) GetUsername() {
 		id    int
 		err   error
 		title string
-		user  models.User
+		user  models.Users
 	)
 	id, err = this.GetInt("id")
 	user, err = models.UserInfo(id)
