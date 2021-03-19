@@ -2,15 +2,14 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="07f8e1e4-ed77-4fdc-a1e5-d8f4aabaf640" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/param_body/main.go" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/param_get/main.go" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/param_post/main.go" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/router_generic/main.go" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/router_static/assets/a.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/router_static/main.go" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/router_static/static/b.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/router_uri/main.go" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../gateway_demo/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../gateway_demo/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/param_struct/main.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/../../.gitignore" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/gin_demo.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/modules.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/param_body/main.go" beforeDir="false" afterPath="$PROJECT_DIR$/param_body/main.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/param_post/main.go" beforeDir="false" afterPath="$PROJECT_DIR$/param_post/main.go" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -51,17 +50,19 @@
     <property name="go.import.settings.migrated" value="true" />
     <property name="go.sdk.automatically.set" value="true" />
     <property name="go.tried.to.enable.integration.vgo.integrator" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/param_post" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/param_struct" />
+    <property name="settings.editor.selected.configurable" value="preferences.lookFeel" />
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="G:\Code\gowork\src\gin_demo\param_struct" />
       <recent name="G:\Code\gowork\src\gin_demo\param_post" />
       <recent name="G:\Code\gowork\src\gin_demo\param_body" />
       <recent name="G:\Code\gowork\src\gin_demo\param_get" />
       <recent name="G:\Code\gowork\src\gin_demo\router_generic" />
     </key>
   </component>
-  <component name="RunManager" selected="Go Build.go build gin_demo/param_body">
+  <component name="RunManager" selected="Go Build.go build gin_demo/param_struct">
     <configuration name="go build gin_demo/param_body" type="GoApplicationRunConfiguration" factoryName="Go Application" temporary="true" nameIsGenerated="true">
       <module name="gin_demo" />
       <working_directory value="$PROJECT_DIR$" />
@@ -89,6 +90,15 @@
       <directory value="$PROJECT_DIR$" />
       <method v="2" />
     </configuration>
+    <configuration name="go build gin_demo/param_struct" type="GoApplicationRunConfiguration" factoryName="Go Application" temporary="true" nameIsGenerated="true">
+      <module name="gin_demo" />
+      <working_directory value="$PROJECT_DIR$" />
+      <kind value="PACKAGE" />
+      <filePath value="$PROJECT_DIR$/param_struct/main.go" />
+      <package value="gin_demo/param_struct" />
+      <directory value="$PROJECT_DIR$" />
+      <method v="2" />
+    </configuration>
     <configuration name="go build gin_demo/router_generic" type="GoApplicationRunConfiguration" factoryName="Go Application" temporary="true" nameIsGenerated="true">
       <module name="gin_demo" />
       <working_directory value="$PROJECT_DIR$" />
@@ -98,22 +108,13 @@
       <directory value="$PROJECT_DIR$" />
       <method v="2" />
     </configuration>
-    <configuration name="go build gin_demo/router_uri" type="GoApplicationRunConfiguration" factoryName="Go Application" temporary="true" nameIsGenerated="true">
-      <module name="gin_demo" />
-      <working_directory value="$PROJECT_DIR$" />
-      <kind value="PACKAGE" />
-      <filePath value="$PROJECT_DIR$/router_uri/main.go" />
-      <package value="gin_demo/router_uri" />
-      <directory value="$PROJECT_DIR$" />
-      <method v="2" />
-    </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="Go Build.go build gin_demo/param_body" />
+        <item itemvalue="Go Build.go build gin_demo/param_struct" />
         <item itemvalue="Go Build.go build gin_demo/param_post" />
+        <item itemvalue="Go Build.go build gin_demo/param_body" />
         <item itemvalue="Go Build.go build gin_demo/param_get" />
         <item itemvalue="Go Build.go build gin_demo/router_generic" />
-        <item itemvalue="Go Build.go build gin_demo/router_uri" />
       </list>
     </recent_temporary>
   </component>
