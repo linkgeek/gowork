@@ -27,5 +27,3 @@ func testing(c *gin.Context) {
 }
 
 // curl -X GET "http://127.0.0.1:8080/testing?name=giant&addr=shenzhen&birthday=1991-02-01"
-// curl -X POST "http://127.0.0.1:8080/testing" -d "name=giant&addr=shenzhen"
-// curl -H "Content-Type:application/json" -X POST "http://127.0.0.1:8080/testing" -d "{\"name\":\"giant\", \"addr\":\"28\", \"birthday\":\"2020-03-19\"}"
