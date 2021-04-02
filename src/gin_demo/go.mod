@@ -14,5 +14,6 @@ require (
 	golang.org/x/crypto v0.0.0-20210220033148-5ea612d1eb83 // indirect
 	golang.org/x/sys v0.0.0-20210313202042-bd2e13477e9c // indirect
 	google.golang.org/protobuf v1.25.0 // indirect
+	gopkg.in/go-playground/validator.v9 v9.31.0
 	gopkg.in/yaml.v2 v2.4.0 // indirect
 )
