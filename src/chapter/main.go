@@ -3,7 +3,7 @@ package main
 import (
 	"fmt"
 	"runtime"
-	"chapter/http"
+	"time"
 )
 
 func init() {
@@ -30,7 +30,7 @@ func main() {
 	// goroutine.WG.Wait()
 	// fmt.Println("All Done!")
 
-	test.TestHttp()
+	//test.TestHttp()
 
-	//time.Sleep(time.Second * 30)
+	time.Sleep(time.Second * 10)
 }
