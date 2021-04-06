@@ -3,8 +3,6 @@ package main
 import (
     "log"
 	"os"
-	"github.com/rs/zerolog"
-    "github.com/rs/zerolog/log"
 )
 
 func testOs()  {
@@ -19,11 +17,6 @@ func testOs()  {
     log.Print("Hey, I'm a log!")
 }
 
-func zlog()  {
-	zerolog.TimeFieldFormat = zerolog.TimeFormatUnix
-    log.Print("Hey! I'm a log message!")
-}
-
 func main() {
-    zlog()
+	testOs()
 }
