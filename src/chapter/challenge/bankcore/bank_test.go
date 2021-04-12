@@ -2,6 +2,7 @@ package bank
 
 import "testing"
 
+// 测试创建账号
 func TestAccount(t *testing.T) {
 	account := Account{
         Customer: Customer{
@@ -37,6 +38,7 @@ func TestDeposit(t *testing.T) {
     }
 }
 
+// 测试负数存款额
 func TestDepositInvalid(t *testing.T) {
 	account := Account{
         Customer: Customer{
@@ -47,8 +49,6 @@ func TestDepositInvalid(t *testing.T) {
         Number:  1001,
         Balance: 0,
 	}
-	
-	
 
     if err := account.Deposit(-10); err == nil {
         t.Error("only positive numbers should be allowed to deposit")
@@ -75,7 +75,7 @@ func TestWithDraw(t *testing.T)  {
     }
 }
 
-// 对账单方法
+// 测试对账单方法
 func TestStatement(t *testing.T)  {
     account := Account{
         Customer: Customer{
@@ -91,6 +91,36 @@ func TestStatement(t *testing.T)  {
 	statement := account.Statement()
     if statement != "1001 - John - 100" {
         t.Error("statement doesn't have the proper format")
+    }
+}
+
+// 测试转账方法
+func TestTransfer(t *testing.T)  {
+    accountA := Account{
+        Customer: Customer{
+            Name:    "John",
+            Address: "Los Angeles, California",
+            Phone:   "(213) 555 0147",
+        },
+        Number:  1001,
+        Balance: 0,
+	}
+
+    accountB := Account{
+        Customer: Customer{
+            Name:    "Mark",
+            Address: "Los Angeles, California",
+            Phone:   "(213) 555 0147",
+        },
+        Number:  1002,
+        Balance: 0,
+	}
+	
+	accountA.Deposit(100)
+    err := accountA.Transfer(50, &accountB)
+
+    if accountA.Balance != 50 && accountB.Balance != 50 {
+        t.Error("transfer from account A to account B is not working", err)
     }
 }
 
